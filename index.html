@@ -1,0 +1,77 @@
+<doctype HTML!>
+<html lang='en'>
+<head>
+
+<link rel="icon" href="P/LOGO.png">
+<meta charset="UTF-8">
+<title>Up And Down</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="function" type="text/js" href="js.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+</head>
+
+<body> 
+    <section class="credit">
+        <a  href="index.html" ><button class="btn">Back</button></a>
+  <h3>
+    i am a beginner of making app.
+    So please forgive me if anything wrong in this app 
+    or when the app bug.
+      ;)
+  </h3>  
+        <a href="https://www.instagram.com/__vishnu__10/">&copy;vishnugopy2018</a>
+    
+    
+</section>
+   <a  href="index.html" ><button class="btn"id="res">Home</button> </a> 
+  <h1 id="clickme">0</h1>
+ 
+     
+<div class="flex"> 
+  <img src="P/LOGO.png" alt="logo">
+  <button class="btn" id="st">Start</button>
+  <button class="btn" id="who">Credits</button>
+
+ </div> 
+   
+   </body>
+    <script>
+    $(document).ready(function(){
+
+        $("h1").hide();
+        $("#res").hide();
+        $(".credit").hide();
+});
+
+ $('#st').click(function(){
+    $("h1").show();
+    $("#res").show();
+    $(".flex").hide();
+    $(".credit").hide();
+    });
+        
+        $('#who').click(function(){
+          $(".credit").show();  
+});
+
+        
+        var button = document.getElementById("clickme"),
+  count = -1;
+
+onclick = function() {
+  count ++;
+  button.innerHTML = count;
+};
+
+    
+    
+    
+    </script>
+
+
+</html>
+</doctype>
