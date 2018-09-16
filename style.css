@@ -1,11 +1,11 @@
 body{
   width:auto;
-  height:100%;
+  height:auto;
   background-image: radial-gradient(circle, #a6a6a6,#003f91,#001b3d,#000d1c);
 }
 
-#clickme{
-  margin-top:10%;
+#plus{
+  margin-top:-4%;
   text-align:center;
 }
 
@@ -19,7 +19,10 @@ h1{
   color:white;
   font-family: 'Black Ops One', cursive;
   text-shadow: 5px 0px 10px black;
+}
 
+.marks{
+ margin-top:-38%;   
 }
 
 .credit{
@@ -78,29 +81,12 @@ div{
   
 }
 
-/*time*/
-
-#timer{
+.timing{
+  font-family: 'Share Tech', sans-serif;   
   margin:-2% 0 0 3%;
   text-align: left;
   font-size:5vh;
   color:white;
   display:block;
-}
-
-#controls{
-  width:200px;
-  margin:auto;
-  display:block;
-}
-
-.timer-btn{
-  color:white;
-  padding:25px;
-  font-family:Helvetica;
-  border-radius:9px;
-  cursor:pointer;
-  display:inline-block;
-  margin:auto;
 }
 

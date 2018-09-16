@@ -32,9 +32,9 @@
  <div class="timing">
 <span id="timer">00:00:00</span>
 </div>
-  <h1 id="clickme">00</h1>
+  <h1 id="plus">00</h1>
     
-<div class="marks"><button class="btn" onclick="stopwatch.stop();" id="stop">resultat</button></div>
+<div class="marks"><button class="btn" onclick="stopwatch.stop();" id="stop">Go to Scores</button></div>
     
 
 
@@ -73,16 +73,15 @@
 });
 
         
-        var button = document.getElementById("clickme"),
-  count = 0;
+        var button = document.getElementById("plus"),
+  pushs =-1;
 
 onclick = function() {
-  count ++;
-  button.innerHTML = count;
+  pushs ++;
+  button.innerHTML = pushs;
 };
 
-        /*java*/
-        var min,sec,ms,count, malt, salt, msalt;
+var min,sec,ms,count, malt, salt, msalt;
 
 var stopwatch = {
   start: function(){
@@ -137,8 +136,6 @@ var stopwatch = {
 }
 
 /*finish*/
-    
-    
     
     </script>
 
