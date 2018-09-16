@@ -27,13 +27,23 @@
     
     
 </section>
+    
    <a  href="index.html" ><button class="btn"id="res">Home</button> </a> 
+ <div class="timing">
+<span id="timer">00:00:00</span>
+</div>
   <h1 id="clickme">00</h1>
+    
+<div class="marks"><button class="btn" onclick="stopwatch.stop();" id="stop">resultat</button></div>
+    
+
+
  
      
 <div class="flex"> 
   <img src="P/LOGO.png" alt="logo">
-  <button class="btn" id="st">Start</button>
+  
+    <button class="btn"  id="start" onclick="stopwatch.start();">Start</button>
   <button class="btn" id="who">Credits</button>
 
  </div> 
@@ -45,13 +55,17 @@
         $("h1").hide();
         $("#res").hide();
         $(".credit").hide();
+        $(".timing").hide();
+        $(".marks").hide();
 });
 
- $('#st').click(function(){
+ $('#start').click(function(){
     $("h1").show();
     $("#res").show();
     $(".flex").hide();
     $(".credit").hide();
+    $(".timing").show();
+    $(".marks").show();
     });
         
         $('#who').click(function(){
@@ -60,13 +74,69 @@
 
         
         var button = document.getElementById("clickme"),
-  count = 00;
+  count = 0;
 
 onclick = function() {
   count ++;
   button.innerHTML = count;
 };
 
+        /*java*/
+        var min,sec,ms,count, malt, salt, msalt;
+
+var stopwatch = {
+  start: function(){
+    if(document.getElementById("start").firstChild.nodeValue != "Start"){
+      document.getElementById("start").firstChild.nodeValue = "Start";
+    }
+    ms = 0;
+    sec = 0;
+    min = 0;
+    count = setInterval(function(){
+      if(ms == 100){
+        ms = 0;
+        if(sec == 60){
+          sec = 0;
+          min++;
+        }
+        else{
+          sec++;
+        }
+      }
+      else{
+        ms++;
+      }
+      
+      malt = stopwatch.pad(min);
+      salt = stopwatch.pad(sec);
+      msalt = stopwatch.pad(ms);
+      
+      stopwatch.update(malt + ":" + salt + ":" + msalt);
+    }, 10);
+    },
+  stop: function(){
+    clearInterval(count);
+ document.getElementById("start").firstChild.nodeValue = "Restart";
+  },
+  
+  update: function(txt){
+     var temp = document.getElementById("timer");
+  temp.firstChild.nodeValue = txt;
+  },
+  
+  pad: function(time){
+    var temp;
+    if(time < 10){
+      temp = "0" + time;
+    }
+    else{
+      temp = time;
+    }
+    return temp;
+  }
+}
+
+/*finish*/
     
     
     

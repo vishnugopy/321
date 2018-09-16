@@ -5,14 +5,21 @@ body{
 }
 
 #clickme{
-  margin-top:20%;
+  margin-top:10%;
   text-align:center;
 }
 
 h3{
     margin:0;
-    font-family: 'Share Tech', sans-serif;
-    
+    font-family: 'Share Tech', sans-serif;    
+}
+
+h1{
+  font-size:40vh;
+  color:white;
+  font-family: 'Black Ops One', cursive;
+  text-shadow: 5px 0px 10px black;
+
 }
 
 .credit{
@@ -33,14 +40,6 @@ h3{
     text-align:center;
     font-family: 'Berkshire Swash', cursive;
     
-}
-
-h1{
-  font-size:40vh;
-  color:white;
-  font-family: 'Black Ops One', cursive;
-  text-shadow: 5px 0px 10px black;
-
 }
 
 a{
@@ -78,3 +77,30 @@ div{
   margin:10% auto 0 auto;
   
 }
+
+/*time*/
+
+#timer{
+  margin:-2% 0 0 3%;
+  text-align: left;
+  font-size:5vh;
+  color:white;
+  display:block;
+}
+
+#controls{
+  width:200px;
+  margin:auto;
+  display:block;
+}
+
+.timer-btn{
+  color:white;
+  padding:25px;
+  font-family:Helvetica;
+  border-radius:9px;
+  cursor:pointer;
+  display:inline-block;
+  margin:auto;
+}
+
