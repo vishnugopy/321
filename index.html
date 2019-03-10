@@ -31,7 +31,7 @@
  <div class="timing">
 <span id="timer">00:00:00</span>
 </div>
-  <h3 class="score" >WOW! YOU DID </h3>
+  <center><h3 class="score" >WOW! YOU DID </h3></center>
   <h1 id="plus">00</h1>
 
     
@@ -83,13 +83,13 @@ $('#pochu').click(function(){
     $(".timing").hide();
     $("h1").stop();
     $(".score").show();
-    $("h1").css("display", "block");
+    $("h1").css("color", "#bc0045");
+    $("#plus").css("z-index", "-100");
 });
 
         
-        var button = document.getElementById("plus"),
-  pushs =-1;
-
+var button = document.getElementById("plus"),
+pushs =-1;
 onclick = function() {
   pushs ++;
   button.innerHTML = pushs;
