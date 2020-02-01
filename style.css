@@ -4,14 +4,28 @@
 body{
   width:auto;
   height:auto;
-  background-image:linear-gradient(to bottom left, #000d1c,#003f91,#001b3d,#000d1c);
+  background:#00aaff;
   font-family: 'Rajdhani', sans-serif;
 }
 
-.fas{
+.fas,.fab{
   font-size: 5vh;
   margin:1%;
   color:white;
+}
+
+#who{
+  position: absolute;
+  bottom: 1;
+  margin:3%;
+}
+
+#insta{
+  position: absolute;
+  bottom: 1;
+  margin:3%;
+  right:1;
+  
 }
 
 
@@ -74,12 +88,7 @@ h1{
 }
 
 
-.credit a{
-    color:white;
-    text-align:center;
-    font-family: 'Rajdhani', sans-serif;
-    
-}
+
 
 a{
 text-decoration: none;

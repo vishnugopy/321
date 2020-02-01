@@ -3,7 +3,10 @@
 <head>
 
 <link rel="icon" href="P/LOGO.png">
-<meta charset="UTF-8">
+<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
 <title>Up And Down</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="function" type="text/js" href="js.js">
@@ -50,6 +53,7 @@
   
     <button class="btn"  id="start" onclick="stopwatch.start();">Start</button>
   <i id="who" class="fas fa-info-circle"></i>
+  <a href="https://www.instagram.com/stupid_version_studio/" id="insta"><i class="fab fa-instagram"></i></a>
 
  </div> 
    
@@ -84,7 +88,7 @@ $('#pochu').click(function(){
     $(".timing").hide();
     $("h1").stop();
     $(".score").show();
-    $("h1").css("color", "#bc0045");
+    $("h1").css("color", "red");
     $("h3").css("font-size", "10vw");
     $("h1").css("text-shadow", "5px 0px 10px white");
 
