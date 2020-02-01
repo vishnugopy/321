@@ -1,7 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+
+
 body{
   width:auto;
   height:auto;
-  background-image: radial-gradient(circle, grey,#003f91,#001b3d,#000d1c);
+  background-image:linear-gradient(to bottom left, #000d1c,#003f91,#001b3d,#000d1c);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.fas{
+  font-size: 5vh;
+  margin:1%;
+  color:white;
+}
+
+
+.timing{
+  margin:1%;
+  text-align:right;
+  font-size:5vh;
+  color:white;
+
+}
+
+.mainmenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
 }
 
 #plus{
@@ -12,13 +45,11 @@ body{
 h3{
     color:aliceblue;
     margin:0;
-    font-family: 'Share Tech', sans-serif;    
 }
 
 h1{
   font-size:50vw;
   color:white;
-  font-family: 'Black Ops One', cursive;
   text-shadow: 5px 0px 10px black;
   z-index: 0;
 }
@@ -32,19 +63,21 @@ h1{
     border:white 2px solid;
     color:white;
     padding:2%;
-    background-image: radial-gradient(circle, #a6a6a6,#003f91,#001b3d,#000d1c);
+    background:black;
     position: absolute;
     margin:10% 3% 0 3%;
     font-size:5vh;
     z-index:1;
     width:85%;
     border-radius:10px;
+    font-family: 'Rajdhani', sans-serif;
 }
+
 
 .credit a{
     color:white;
     text-align:center;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Rajdhani', sans-serif;
     
 }
 
@@ -54,6 +87,7 @@ color:white;
 }
 
 .btn{
+  font-family: 'Rajdhani', sans-serif;
   display:inline-block;
   margin:3%;
   width:94%;
@@ -63,33 +97,11 @@ color:white;
   border:3px black solid;
   color:black;
   font-size:12vw;
-  font-family: 'Cabin Sketch', cursive;
 }
 
 img{
     width:93%;
     height:auto;
     margin:2%;
-}
-
-.flex{
-  display:flex;
-  flex-direction: column;
-}
-
-div{
-  padding:2%;
-  height:auto;
-  margin:10% auto 0 auto;
-  
-}
-
-.timing{
-  font-family: 'Share Tech', sans-serif;   
-  margin:-2% 0 0 3%;
-  text-align: left;
-  font-size:5vh;
-  color:white;
-  display:block;
 }
 
