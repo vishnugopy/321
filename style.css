@@ -4,11 +4,12 @@
 body{
   width:auto;
   height:auto;
-  background:#00aaff;
+  background:#0066ff;
   font-family: 'Rajdhani', sans-serif;
   animation-name: colorchange;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+  outline: none;
 }
 
 .fas,.fab{
@@ -110,12 +111,13 @@ color:white;
   border:3px black solid;
   color:black;
   font-size:12vw;
+  outline: none;
 }
 
 img{
     width:93%;
     height:auto;
-    margin:2%;
+    margin:20% auto 5% auto;
 }
 
 @keyframes colorchange {
