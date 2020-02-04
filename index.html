@@ -43,7 +43,7 @@
 
     
     
-<div class="marks"><button class="btn" onclick="done()" id="pochu">Go to Scores</button></div>
+<div class="marks"><button class="btn" id="pochu">Go to Scores</button></div>
     
 
     
@@ -99,13 +99,19 @@ $('#pochu').click(function(){
 });
 
         
-var button = document.getElementById("plus"),
-pushs =-1;
-onclick = function() {
-  pushs ++;
-  button.innerHTML = pushs;
+var button = document.getElementById("plus");
+var done = document.getElementById("pochu");
+count == 0 ;
+
+document.getElementById('plus').onclick = function(){
+count += 01;
+button.innerHTML = count;
+
 };
 
+document.getElementById('pochu').onclick = function(){
+  document.getElementById('plus').onclick =  null;
+};
 
 
 
@@ -163,7 +169,6 @@ var stopwatch = {
   }
 }
 
-/*finish*/
     
     </script>
 

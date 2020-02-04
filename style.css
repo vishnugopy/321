@@ -2,7 +2,7 @@
 
 
 body{
-  width:auto;
+  width:100%;
   height:auto;
   background:#0066ff;
   font-family: 'Rajdhani', sans-serif;
@@ -56,8 +56,14 @@ body{
 }
 
 #plus{
-  margin-top:-4%;
   text-align:center;
+}
+
+#pochu{
+  margin:2% auto;
+  text-align:center;
+  position: absolute;
+  bottom:10%;
 }
 
 h3{
@@ -67,10 +73,11 @@ h3{
 }
 
 h1{
-  font-size:50vw;
+  font-size:80vw;
   color:white;
   text-shadow: 5px 0px 10px black;
   z-index: 0;
+  margin:5% auto;
 }
 
 
@@ -103,7 +110,7 @@ color:white;
 .btn{
   font-family: 'Rajdhani', sans-serif;
   display:inline-block;
-  margin:3%;
+  margin:1%;
   width:94%;
   height:auto;
   background:white;
