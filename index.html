@@ -35,10 +35,10 @@
 </div>
 </section>
 
-  <center><h3 class="score" >WOW! YOU DID </h3></center>
+<h3 class="score" >WOW! YOU DID </h3>
 
   
-  <h1 id="plus">00</h1>
+  <h1 id="plus">0</h1>
 
 
     
@@ -99,15 +99,13 @@ $('#pochu').click(function(){
 });
 
         
-var button = document.getElementById("plus");
-var done = document.getElementById("pochu");
-count == 0 ;
-
-document.getElementById('plus').onclick = function(){
-count += 01;
-button.innerHTML = count;
-
+var gogo = document.getElementById("plus"),
+  count = 0;
+gogo.onclick = function() {
+  count += 1;
+  gogo.innerHTML =  count;
 };
+
 
 document.getElementById('pochu').onclick = function(){
   document.getElementById('plus').onclick =  null;

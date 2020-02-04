@@ -2,14 +2,15 @@
 
 
 body{
-  width:100%;
-  height:auto;
+  width:98%;
+  height:90%;
   background:#0066ff;
   font-family: 'Rajdhani', sans-serif;
   animation-name: colorchange;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   outline: none;
+  
 }
 
 .fas,.fab{
@@ -121,6 +122,11 @@ color:white;
   outline: none;
 }
 
+.score{
+  text-align: center;
+}
+
+
 img{
     width:93%;
     height:auto;
@@ -128,7 +134,7 @@ img{
 }
 
 @keyframes colorchange {
-  10% {background-color: #00aaff;}
+  10% {background-color: #064f7e;}
   20% {background-color: #fff985;}
   40% {background-color: #3bffba;}
   60% {background-color: #ff3b96;}  
